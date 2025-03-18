@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh dien tich va chu vi</title>
+    <link rel="stylesheet" href="stylesA.css">
+    <script defer src="scriptA.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Tinh dien tich va chu vi</h2>
+        <label for="shape">chon loai hinh:</label>
+        <select id="shape" onchange="updateFields()">
+            <option value="chunhat">hinh chu nhat</option>
+            <option value="tamgiac">hinh tam giac</option>
+            <option value="tron">hinh tron</option>
+        </select>
+        <div id="inputFields">
+            <input type="number" id="length" placeholder="nhap do dai">
+            <input type="number" id="width" placeholder="nhap do rong">
+        </div>
+        <button onclick="calculate()">tinh</button>
+        <p id="error" class="error"></p>
+        <p><strong>chu vi:</strong> <span id="chuvi"></span></p>
+        <p><strong>dien tich:</strong> <span id="dientich"></span></p>
+    </div>
+</body>
+</html>
